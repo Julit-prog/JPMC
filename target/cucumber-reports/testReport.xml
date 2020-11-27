@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="226.506">
+<testcase classname="SearchJPM" name="Search &quot;J P Morgan&quot; and verify logo is present in first link" time="73.488">
+<system-out><![CDATA[Given User launches a browser...............................................passed
+When User opens google......................................................passed
+And User searches string "J. P. Morgan".....................................passed
+And User clicked on first link..............................................passed
+Then Verify J P Morgan Logo should be present...............................passed
+And close the browser.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="SearchJPM" name="Search &quot;J P Morgan&quot; and verify logo is present in first link 2" time="65.67">
+<system-out><![CDATA[Given User launches a browser...............................................passed
+When User opens google......................................................passed
+And User searches string "j.p.morgan".......................................passed
+And User clicked on first link..............................................passed
+Then Verify J P Morgan Logo should be present...............................passed
+And close the browser.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="SearchJPM" name="Search &quot;J P Morgan&quot; and verify logo is present in first link 3" time="23.475">
+<failure message="Logo not present" type="java.lang.AssertionError"><![CDATA[Given User launches a browser...............................................passed
+When User opens google......................................................passed
+And User searches string "j p morgan".......................................passed
+And User clicked on first link..............................................passed
+Then Verify J P Morgan Logo should be present...............................failed
+And close the browser.......................................................skipped
+
+StackTrace:
+java.lang.AssertionError: Logo not present
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepDefinitions.SearchJPMSteps.jPMorganLogoShouldBePresent(SearchJPMSteps.java:57)
+	at ✽.Verify J P Morgan Logo should be present(file:///E:/JPM_Cucumber/./Features/Search.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="SearchJPM" name="Search &quot;J P Morgan&quot; and verify logo is present in first link 4" time="63.554">
+<system-out><![CDATA[Given User launches a browser...............................................passed
+When User opens google......................................................passed
+And User searches string "J P Morgan".......................................passed
+And User clicked on first link..............................................passed
+Then Verify J P Morgan Logo should be present...............................passed
+And close the browser.......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

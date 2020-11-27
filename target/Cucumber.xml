@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.903">
+<testcase classname="SearchJPM" name="Search &quot;J P Morgan&quot; and verify logo is present in first link" time="7.648">
+<failure message="Reached error page: about:neterror?e=dnsNotFound&amp;u=https%3A//www.google.com/&amp;c=UTF-8&amp;d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20www.google.com.&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'IND-L-JUVARGHES', ip: '127.0.0.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 15900, moz:profile: C:\Users\juvarghese\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 91361ab9-89cc-4a37-9522-289e5e555d50" type="org.openqa.selenium.WebDriverException"><![CDATA[Given User launches a browser...............................................passed
+When User opens google......................................................failed
+And User searches string 'jn'...............................................skipped
+And User clicked on first link..............................................skipped
+Then Verify J P Morgan Logo should be present...............................skipped
+And close the browser.......................................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=https%3A//www.google.com/&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20www.google.com.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IND-L-JUVARGHES', ip: '127.0.0.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 15900, moz:profile: C:\Users\juvarghese\AppData..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 91361ab9-89cc-4a37-9522-289e5e555d50
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at stepDefinitions.SearchJPMSteps.userOpensGoogle(SearchJPMSteps.java:28)
+	at ✽.User opens google(file:///E:/JPM_Cucumber/./Features/Search.feature:4)
+]]></failure>
+</testcase>
+</testsuite>
